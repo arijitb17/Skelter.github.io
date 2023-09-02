@@ -11,6 +11,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&family=Lobster+Two:ital@1&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
 </head>
 <body>
     <div class="header">
@@ -20,7 +25,13 @@
                     <img src="logo.png" width="125px">
                 </div>
                 <nav>
-                    <ul>
+                    <div class="menu-toggle">
+                        <input type="checkbox" id="toggle">
+                        <label for="check" class="burger">
+                            <i class="fas fa-bars" id="btn"></i>
+                            <i class="fas fa-times" id="cancel"></i> <!-- Font Awesome "bars" icon -->
+                        </label>
+                    <ul class="menu">
                         <li><a href="C:\Users\Asus\Desktop\Skelter\images\index.html">Home</a></li>
                         <li><a href="">Products</a></li>
                         <li><a href="">About</a></li>

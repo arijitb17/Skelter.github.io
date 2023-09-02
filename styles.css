@@ -47,7 +47,82 @@ a{
     text-decoration: none;
     color: #fefefe;
 }
+label #btn,
+label #cancel{
+    color: #fefefe;
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#toggle{
+    display: none;
+}
+@media (max-width: 1118px) {
+    nav img{
+        left: 8%;
+    }
+    
+}
+@media (max-width: 944px) {
+    nav img{
+        left: 6%;
+        top: 20px;
+        width: 130px;
+    }
+    nav ul li a{
+        font-size: 17px;
+    }
+    
+}
+@media (max-width: 860px) {
+    label #btn{
+        display: block;
+    }
+    ul{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background: #11001b;
+        opacity: .5;
+        top: 120px;
+        left: 0;
+        text-align: center;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    .content1{
+        position: relative;
+        margin-top: 0px;
+        padding: auto;
+        
+    }
+   
+    .content1 p{
+        font-size: 20px;
+    }
+    .content1 #countdown{
+        font-size: 20px;
+    }
 
+#toggle:checked ~ ul{
+    left: 0;
+}
+#toggle:checked ~ label #btn{
+    display: none;
+}
+#toggle:checked ~ label #cancel{
+    display: block;
+}
+}
 /* Style the video container */
 .video-container {
     position: relative;
