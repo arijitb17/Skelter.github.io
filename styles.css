@@ -1,15 +1,48 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    text-align: center;
-    padding: 50px;
-}
-/* Reset default margin and padding */
-body {
-    margin: 0;
-    padding: 0;
-}
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+    background: #fefefe;
+}
+header{
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    background: #11101b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+
+}
+.logo img{
+    max-width: 100px;
+    height: auto;
+}
+.burger{
+    display: none;
+}
+.nav-bar ul{
+    display: flex;
+}
+.nav-bar ul li a{
+    display: block;
+    color: #fefefe;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: .2s;
+    margin: 0 5px;
+}
+.nav-bar ul li a:hover{
+    color: #11101b;
+    background: #fefefe;
+}
 
 /* Style the video container */
 .video-container {
@@ -31,7 +64,7 @@ video {
 }
 
 /* Style the content on top of the video */
-.content {
+.content1 {
     position: relative;
     top: 50%;
     left: 50%;
@@ -52,25 +85,10 @@ video {
     font-size: 24px;
     margin-top: 20px;
 }
-/* Reset some default styles */
-body, h1, h2, h3, p, ul, li {
-    margin: 0;
-    padding: 0;
-}
 
-/* Basic styles for the header */
-header {
-    background-color: #000000;
-    color: #fff;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-}
+
+    
+
 .neon-text {
     font-size: 1em;
     color: #fff;
@@ -90,51 +108,13 @@ header {
     }
 }
 /* Styles for the logo */
-.logo img {
-    max-width: 120px;
-    height: auto;
-}
 
-/* Styles for the navigation menu */
-nav{
-    display: flex;
-}
-nav ul {
-    list-style: none;
-}
-
-nav ul li {
-    display: inline-flex;
-    margin: 0 20px;
-    padding: 10px 10px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    
-    
-    transition: all .42 ease;
-}
-.nav-menu{
-    display: flex;
-    align-items: center;
-}
-.nav-menu i{
-    margin-right: 20px;
-    color: #f0f0f0;
-    font-size: 25px;
+.content1{
+    font-family: 'Lobster Two', cursive;
     font-weight: 400;
-    transition: all .42 ease;
+    font-size: 1.5rem;
 }
-#menu-icon{
-    font-size: 35px;
-    color: #f0f0f0;
-    z-index: 10001;
-    cursor: pointer;
-    padding-right: 30px;
-}
+
 
 /* Add your preferred styling here */
 

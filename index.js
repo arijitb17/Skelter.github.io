@@ -49,3 +49,22 @@
         return emailRegex.test(email);
     }
 });
+// JavaScript to update the cart count
+let cartCount = 0;
+const cartCountElement = document.querySelector('.cart-count');
+
+function updateCartCount(count) {
+    cartCount = count;
+    cartCountElement.textContent = cartCount;
+}
+
+// Example usage:
+updateCartCount(3); // Update the cart count to 3
+
+// JavaScript to toggle the mobile menu
+const menuToggle = document.querySelector('.menu-toggle');
+const menu = document.querySelector('.menu');
+
+menuToggle.addEventListener('click', () => {
+    menu.classList.toggle('active');
+});
