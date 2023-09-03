@@ -129,7 +129,7 @@ label #cancel{
     position: relative;
     overflow: hidden;
     width: 100%;
-    height: 100vh; /* Make the container cover the entire viewport */
+    height: 100vh; 
 }
 
 /* Style the video */
@@ -139,7 +139,7 @@ video {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Scale video to cover the entire container */
+    object-fit: cover; 
     z-index: -1; /* Place the video behind other content */
 }
 
@@ -164,13 +164,21 @@ video {
 }
 #countdown {
     font-family: 'Lobster Two', cursive;
-    background:linear-gradient(135deg, #14ffe9, #ffebff, #ff00e0);
-    width: 30%;
-    transform: translate(115%, 50%);
+    width: 50%;
+    transform: translate(50%, 50%);
     font-size: 35px;
     margin-top: 20px;
-    border-radius: 100px;
+    border-radius: 50px;
+    background-image: linear-gradient(#16bffd,#cb3066);
+    box-shadow: inset 0 0 10px #000000; 
+    box-shadow: 1px 1px 0 #000,
+                2px 2px 0 #000,
+                3px 3px 0 #000,
+                4px 4px 0 #000,
+                5px 5px 0 #000,
+                6px 6px 0 #000;            
 }
+
 /* Styles for the logo */
 .content1{
     background: #11001b;
@@ -201,7 +209,7 @@ video {
     -webkit-text-stroke-color: black;
 
 }
-/* Add your preferred styling here */
+
 
 .notify-container {
     text-align: center;
