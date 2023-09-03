@@ -164,7 +164,7 @@ video {
 }
 #countdown {
     font-family: 'Lobster Two', cursive;
-    background: #11001b;
+    background:linear-gradient(135deg, #14ffe9, #ffebff, #ff00e0);
     width: 30%;
     transform: translate(115%, 50%);
     font-size: 35px;
