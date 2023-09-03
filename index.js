@@ -1,26 +1,25 @@
-  // Set the date we're counting down to (replace with your desired date)
-  var countdownDate = new Date("2023-09-15T00:00:00").getTime();
+var countdownDate = new Date("2023-09-15T00:00:00").getTime();
 
-  // Update the countdown every 1 second
-  var countdownInterval = setInterval(function() {
-      var currentDate = new Date().getTime();
-      var distance = countdownDate - currentDate;
+// Update the countdown every 1 second
+var countdownInterval = setInterval(function() {
+    var currentDate = new Date().getTime();
+    var distance = countdownDate - currentDate;
 
-      // Calculate days, hours, minutes, and seconds
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    // Calculate days, hours, minutes, and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-      // Display the countdown
-      document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+    // Display the countdown
+    document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
 
-      // If the countdown is over, display a message
-      if (distance < 0) {
-          clearInterval(countdownInterval);
-          document.getElementById("countdown").innerHTML = "We're here!";
-      }
-  }, 1000);
+    // If the countdown is over, display a message
+    if (distance < 0) {
+        clearInterval(countdownInterval);
+        document.getElementById("countdown").innerHTML = "We're here!";
+    }
+}, 1000);
   document.addEventListener("DOMContentLoaded", function () {
     const emailInput = document.getElementById("emailInput");
     const notifyButton = document.getElementById("notifyButton");
@@ -68,3 +67,8 @@ const menu = document.querySelector('.menu');
 menuToggle.addEventListener('click', () => {
     menu.classList.toggle('active');
 });
+hamburger = document.querySelector(".hamburger");
+nav = document.querySelector("nav");
+hamburger.onclick = function() {
+    nav.classList.toggle("active");
+}

@@ -88,7 +88,7 @@ label #cancel{
         background: #11001b;
         opacity: .5;
         top: 120px;
-        left: 0%;
+        left: -100%;
         text-align: center;
         transition: all .5s;
     }
@@ -101,7 +101,7 @@ label #cancel{
         font-size: 20px;
     }
     .content1{
-        position: relative;
+        position: fixed;
         margin-top: 0px;
         padding: auto;
         
@@ -182,7 +182,8 @@ video {
     border-radius: 10px;
 }
 .content1{
-    font-family: 'Josefin Sans', sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
+    font-style: italic;
     font-weight: 400;
     font-size: 1.5rem;
 }
